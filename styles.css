@@ -76,6 +76,26 @@ header {
     /* Bordures arrondies */
 }
 
+.article-right {
+    width: 50%;
+    margin-left:50%;
+    /* Prend la moitié de la largeur du content */
+    padding: 20px;
+    /* Ajoute de l'espace autour du texte */
+    box-sizing: border-box;
+    /* Inclut le padding dans le calcul de la largeur */
+    background: rgba(255, 255, 255, 0.8);
+    /* Fond légèrement transparent */
+    border: 2px solid #DAA520;
+    /* Bordure dorée */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre portée pour un effet de profondeur */
+    margin: 20px;
+    /* Marge autour de l'article pour ne pas coller aux bords du content */
+    border-radius: 10px;
+    /* Bordures arrondies */
+}
+
 h3 {
     color: #333;
     /* Couleur plus foncée pour le titre */
