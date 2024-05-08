@@ -50,7 +50,7 @@ header {
 
 .content {
     display: flex;
-    background-image: url('./Images/fotor-ai-20240508182044.jpg');
+    background-image: url('./fotor-ai-20240508182044.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
