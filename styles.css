@@ -1,45 +1,104 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+body,
+html {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header {
-    background: #005a87;
-    color: #fff;
+    background-image: linear-gradient(to right, #000000 0%, #000000 30%, #6a4f24 50%, #000000 70%, #000000 100%);
+    color: white;
     padding: 10px 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #DAA520;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-header nav ul li {
-    display: inline;
-    margin-left: 10px;
+.titles {
+    flex-grow: 1;
+    /* Permet aux titres de prendre tout l'espace disponible à gauche */
 }
 
-header nav ul li a {
-    color: #fff;
+.discord-button {
+    margin-left: auto;
+    /* Pousse le bouton Discord à droite */
+}
+
+.discord-button a {
+    background-color: #7289DA;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-section {
+.discord-button a:hover {
+    background-color: #5b6eae;
+}
+
+.content {
+    display: flex;
+    background-image: url('./Images/fotor-ai-20240508182044.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 800px;
+}
+
+.article-left {
+    width: 50%;
+    /* Prend la moitié de la largeur du content */
     padding: 20px;
-    margin: 0 15px;
-    background: #fff;
-    border: 1px solid #ddd;
+    /* Ajoute de l'espace autour du texte */
+    box-sizing: border-box;
+    /* Inclut le padding dans le calcul de la largeur */
+    background: rgba(255, 255, 255, 0.8);
+    /* Fond légèrement transparent */
+    border: 2px solid #DAA520;
+    /* Bordure dorée */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre portée pour un effet de profondeur */
+    margin: 20px;
+    /* Marge autour de l'article pour ne pas coller aux bords du content */
+    border-radius: 10px;
+    /* Bordures arrondies */
 }
 
-footer {
-    text-align: center;
-    padding: 10px 20px;
-    background: #333;
-    color: #fff;
+h3 {
+    color: #333;
+    /* Couleur plus foncée pour le titre */
+    font-family: 'Arial', sans-serif;
+    /* Police plus élégante, assurez-vous que la police correspond à votre design */
 }
 
+p {
+    color: #666;
+    /* Couleur plus légère pour le texte */
+    line-height: 1.6;
+    /* Espacement de ligne pour meilleure lisibilité */
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    color: #0056b3;
+    /* Couleur du lien */
+    text-decoration: none;
+    /* Pas de soulignement */
+}
+
+a:hover {
+    color: #003580;
+    /* Couleur du lien au survol */
+}
