@@ -8,7 +8,7 @@ html {
 }
 
 header {
-    background-image: linear-gradient(to right, #000000 0%, #000000 30%, #6a4f24 50%, #000000 70%, #000000 100%);
+    background-image: linear-gradient(to right, #000000 0%, #000000 20%, #6a4f24 50%, #000000 80%, #000000 100%);
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -59,12 +59,13 @@ header {
 
 .article-left {
     width: 50%;
+    height: 30rem;
     /* Prend la moitié de la largeur du content */
     padding: 20px;
     /* Ajoute de l'espace autour du texte */
     box-sizing: border-box;
     /* Inclut le padding dans le calcul de la largeur */
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.5);
     /* Fond légèrement transparent */
     border: 2px solid #DAA520;
     /* Bordure dorée */
@@ -78,13 +79,14 @@ header {
 
 .article-right {
     width: 50%;
-    margin-left:50%;
+    height: 30rem;
+    margin-left: 50%;
     /* Prend la moitié de la largeur du content */
     padding: 20px;
     /* Ajoute de l'espace autour du texte */
     box-sizing: border-box;
     /* Inclut le padding dans le calcul de la largeur */
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.5);
     /* Fond légèrement transparent */
     border: 2px solid #DAA520;
     /* Bordure dorée */
@@ -96,15 +98,50 @@ header {
     /* Bordures arrondies */
 }
 
+h1,
+h2 {
+    font-family: 'Uncial Antiqua', serif;
+    /* Utilise la police médiévale */
+    color: #997207;
+    /* Couleur brun-rougeâtre sombre pour un look plus ancien */
+    /*text-align: center;*/
+    /* Centre les titres */
+}
+
+h1 {
+    font-size: 2em;
+    /* Taille plus grande pour le titre principal */
+    /*margin-bottom: 0.3em;*/
+    /* Espacement pour séparer du sous-titre */
+}
+
+h2 {
+    font-size: 1.5em;
+    /* Légèrement plus petit que le h1 */
+    color: #997207;
+    /* Une nuance un peu différente pour le sous-titre */
+    /*margin-bottom: 1em;*/
+    /* Plus d'espace après le sous-titre */
+}
+
+/* Ajouter des décorations optionnelles */
+.header-content {
+    background: url('path/to/medieval-texture.jpg');
+    /* Ajoute une texture de fond médiévale si désiré */
+    /*padding: 20px;*/
+    /*border: 1px solid #4a2c2a;*/
+    /* Bordure pour renforcer le style ancien */
+}
+
 h3 {
-    color: #333;
+    color: rgb(29, 28, 28);
     /* Couleur plus foncée pour le titre */
     font-family: 'Arial', sans-serif;
     /* Police plus élégante, assurez-vous que la police correspond à votre design */
 }
 
 p {
-    color: #666;
+    color: rgb(22, 22, 22);
     /* Couleur plus légère pour le texte */
     line-height: 1.6;
     /* Espacement de ligne pour meilleure lisibilité */
@@ -112,13 +149,137 @@ p {
 }
 
 a {
-    color: #0056b3;
+    color: #443409;
+    font-weight: bold;
     /* Couleur du lien */
     text-decoration: none;
     /* Pas de soulignement */
 }
 
 a:hover {
-    color: #003580;
+    color: #f5b608;
+    font-weight: bold;
     /* Couleur du lien au survol */
+}
+
+.content-footer {
+    width: 100%;
+    /* S'assure que le footer prend toute la largeur de la page */
+    background-color: #333;
+    /* Couleur de fond sombre pour le footer, ajustable selon vos préférences */
+    color: #fff;
+    /* Couleur du texte blanc pour le contraste */
+    padding: 20px 0;
+    /* Ajoute de l'espace au-dessus et en dessous du texte dans le footer */
+    text-align: center;
+    /* Centre le texte dans le footer */
+    border-top: 3px solid #DAA520;
+    /* Bordure supérieure dorée */
+}
+
+.pf {
+    color: white;
+}
+
+/* Styles de base pour mobiles (écrans jusqu'à 600px de large) */
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .article-left,
+    .article-right {
+        width: 100%;
+        height: auto;
+        /* Ajustement pour une meilleure lisibilité sur mobile */
+        margin-left: 0;
+        /* Ajuster la marge pour l'article de droite */
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .discord-button {
+        margin-top: 10px;
+        margin-left: 0%;
+        padding-bottom: 2em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+    }
+
+    .content-footer {
+        padding: 10px 0;
+    }
+}
+
+/* Styles pour tablettes (écrans entre 601px et 800px de large) */
+@media (min-width: 601px) and (max-width: 800px) {
+
+    .article-left,
+    .article-right {
+        width: 100%;
+        height: auto;
+        /* Chaque article prend la pleine largeur */
+        margin-left: 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .discord-button {
+        margin-top: 10px;
+        margin-left: 0%;
+        padding-bottom: 2em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+    }
+
+    .content-footer {
+        padding: 15px 0;
+    }
+}
+
+/* Styles pour tablettes (écrans entre 601px et 800px de large) */
+@media (min-width: 801px) and (max-width: 1000px) {
+
+    .article-left,
+    .article-right {
+        width: 100%;
+        height: auto;
+        /* Chaque article prend la pleine largeur */
+        margin-left: 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .discord-button {
+        margin-top: 10px;
+        margin-left: 0%;
+        padding-bottom: 2em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+    }
+
+    .content-footer {
+        padding: 15px 0;
+    }
 }
