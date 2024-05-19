@@ -57,6 +57,15 @@ header {
     min-height: 800px;
 }
 
+.content_Marchand {
+    display: inline-flex;
+    background-image: url('Background_Monney.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 600px;
+}
+
 .article-left {
     width: 50%;
     height: 30rem;
@@ -66,6 +75,26 @@ header {
     box-sizing: border-box;
     /* Inclut le padding dans le calcul de la largeur */
     background: rgba(255, 255, 255, 0.5);
+    /* Fond légèrement transparent */
+    border: 2px solid #DAA520;
+    /* Bordure dorée */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre portée pour un effet de profondeur */
+    margin: 20px;
+    /* Marge autour de l'article pour ne pas coller aux bords du content */
+    border-radius: 10px;
+    /* Bordures arrondies */
+}
+
+.article-left-Marchand {
+    width: 50%;
+    height: 30rem;
+    /* Prend la moitié de la largeur du content */
+    padding: 20px;
+    /* Ajoute de l'espace autour du texte */
+    box-sizing: border-box;
+    /* Inclut le padding dans le calcul de la largeur */
+    background: rgba(226, 197, 197, 0.699);
     /* Fond légèrement transparent */
     border: 2px solid #DAA520;
     /* Bordure dorée */
@@ -87,6 +116,33 @@ header {
     box-sizing: border-box;
     /* Inclut le padding dans le calcul de la largeur */
     background: rgba(255, 255, 255, 0.5);
+    /* Fond légèrement transparent */
+    border: 2px solid #DAA520;
+    /* Bordure dorée */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre portée pour un effet de profondeur */
+    margin: 20px;
+    /* Marge autour de l'article pour ne pas coller aux bords du content */
+    border-radius: 10px;
+    /* Bordures arrondies */
+}
+
+.article-right-Marchand {
+    width: 50%;
+    height: 30rem;
+    margin-left: 50%;
+    /* Prend la moitié de la largeur du content */
+    padding: 20px;
+    /* Ajoute de l'espace autour du texte */
+    box-sizing: border-box;
+    /* Inclut le padding dans le calcul de la largeur */
+    background-image: url('Marchand.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #474242;
+    /* Couleur de fond pour les espaces vides */
+
     /* Fond légèrement transparent */
     border: 2px solid #DAA520;
     /* Bordure dorée */
@@ -181,7 +237,151 @@ a:hover {
     color: white;
 }
 
-/* Styles de base pour mobiles (écrans jusqu'à 600px de large) */
+.video-content_youTube {
+    display: block;
+    justify-content: center;
+
+    width: 100%;
+    text-align: center;
+    background: rgba(22, 16, 16, 0.5);
+    /* Fond transparent comme les articles */
+    padding: 10px;
+
+    border-top: 2px solid #DAA520;
+    border-bottom: 2px solid #DAA520;
+    height: auto;
+
+}
+
+.article-video {
+    width: 50%;
+    /* Utiliser toute la largeur disponible */
+    max-width: auto;
+    padding: 10px;
+    border: 2px solid #DAA520;
+    margin-left: 25%;
+    /* Largeur maximale de l'iframe */
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content-Shop {
+    width: 100%;
+    padding: 20px;
+    background-color: #2E1A14;
+    /* Couleur de fond sombre pour l'ensemble du contenu */
+    text-align: center;
+}
+
+#currentPieces {
+    color: #f5b400;
+}
+
+.pieces {
+    color: #b48606;
+    font-style: italic;
+    font-size: 1.2em;
+    font-family: 'Uncial Antiqua', cursive;
+}
+
+.result {
+    color: #f3b406;
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: 'Uncial Antiqua', cursive;
+}
+
+.container_h3 {
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+    height: 100px;
+    /* Assurez-vous que le conteneur a une hauteur définie */
+}
+
+.h3_item {
+    text-align: center;
+    color: #f3b406;
+    font-style: italic;
+    font-size: 1.8em;
+    font-family: 'Uncial Antiqua', cursive;
+}
+
+#jsonContent {
+    width: 90%;
+    margin-left: 5%;
+    background-color: #4A2F27;
+    /* Couleur de fond sombre pour les éléments JSON */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(248, 191, 4, 0.5);
+    /* Ombre pour donner un effet de profondeur */
+}
+
+.item {
+    border: 2px solid #704214;
+    /* Couleur brun foncé pour les bordures */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    /*background-image: url("0_74540_2b168c16_XXXL.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    background-color: #704214;
+    color: #F5F5DC;
+    /* Texte couleur beige pour un bon contraste */
+    font-family: 'Uncial Antiqua', cursive;
+    /* Police médiévale */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    /* Ombre pour donner un effet de profondeur */
+}
+
+.item h4 {
+    margin-top: 0;
+    font-size: 1.5em;
+    /* Taille de police légèrement plus grande pour les titres */
+    color: #FFD700;
+    /* Couleur or pour les titres */
+    text-shadow: 2px 2px 5px #000000;
+    /* Ombre pour donner un effet de profondeur aux titres */
+}
+
+.item p {
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    /* Couleur blanche pour le texte */
+    text-shadow: 1px 1px 3px #000000;
+    /* Ombre pour donner un effet de profondeur au texte */
+}
+
+.item button {
+    background-color: #c56505;
+    /* Couleur brun foncé pour les boutons */
+    color: #FFFFFF;
+    /* Texte blanc */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Uncial Antiqua', cursive;
+    /* Police médiévale */
+    font-size: 1em;
+    /* Taille de police standard pour les boutons */
+    text-shadow: 1px 1px 3px #000000;
+    /* Ombre pour donner un effet de profondeur au texte des boutons */
+}
+
+.item button:hover {
+    background-color: #ff5100;
+    /* Couleur légèrement plus claire au survol */
+    color: #FFD700;
+    /* Texte couleur or au survol */
+}
+
+/*************************************************************** Styles de base pour mobiles (écrans jusqu'à 600px de large) *****************************************/
 @media (max-width: 600px) {
     .content {
         flex-direction: column;
@@ -281,5 +481,27 @@ a:hover {
 
     .content-footer {
         padding: 15px 0;
+    }
+
+    .video-content {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        background: rgba(255, 255, 255, 0.5);
+        /* Fond transparent comme les articles */
+        margin: 20px;
+        border: 2px solid #DAA520;
+        /* Bordure dorée */
+        border-radius: 10px;
+        /* Bordures arrondies */
+
+        height: auto;
+    }
+
+    .article-video {
+        width: 100%;
+        /* Utiliser toute la largeur disponible */
+        max-width: auto;
+        /* Largeur maximale de l'iframe */
     }
 }
